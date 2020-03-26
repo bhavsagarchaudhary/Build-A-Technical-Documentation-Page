@@ -1,0 +1,136 @@
+html,body {
+  min-width: 290px;
+  color: #035AA6;
+  background-color: #F2F2F2;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  border-right: solid;
+  border-color: #035AA6;
+  background-color: #049DD9;
+}
+
+header {
+  color: #F2F2F2;
+  margin: 10px;
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-size: 1.8em;
+}
+
+#main-doc header {
+  color: #035AA6;
+  text-align: left;
+  font-family: 'Lora', serif;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+  
+#navbar ul {
+  height: 85%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #035AA6;
+  border: 1.5px solid;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  padding: 1em;
+  padding-left: 35px;
+  list-style: none;
+  position: relative;
+  left: -50px;
+  width: 100%; 
+}
+
+#navbar li:hover {
+  background: #0339A6;
+}
+  
+#navbar a {
+  color: #F2F2F2;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+} 
+
+#navbar a:hover {
+  color: rgb(255, 252, 62);
+}
+  
+#main-doc {
+  position: absolute;
+  margin-left: 260px;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+  
+section article {
+  color: #035AA6;
+  margin-left: 40px;
+  font-size: 1em;
+}
+  
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  line-height: 2;
+  background-color: #e4e4e4;
+  color: #0339A6;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+/* For mobile phones */
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+      height: 257px;
+  }
+
+  #navbar {
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 325px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+  }
+
+  #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 300px;
+  }
+
+  #main-doc section {
+      padding-top: 50px; 
+  }
+
+  #main-doc header {
+      margin-left: 1px;
+  }
+
+  section article {
+      margin-left: 7px;
+  }
+}
